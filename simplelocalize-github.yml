@@ -5,7 +5,7 @@ upload:
   when:
     push:
   files:
-    - path: "lib/i18n/translations/english.json" # Path to your source translations
+    - path: "lib/i18n/translations/english.yaml" # Path to your source translations
       format: "yaml" # Input file format
       language-key: "en" # Input language key
       options:
@@ -15,7 +15,7 @@ upload:
 
 download:
   files:
-    - path: "lib/i18n/translations/{lang}.json" # Output translations
+    - path: "lib/i18n/translations/{lang}.yaml" # Output translations
       format: "yaml" # Output file format
       sort: "LEXICOGRAPHICAL"
       options:
